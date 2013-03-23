@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<ul class="entries">
+	{% for post in site.posts %}
+	<li>
+		<a class="entry" href="{{ post.url }}">
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.content | limit: 50 }}</p>
+		</a>
+	</li>
+	{% endfor %}
+	<li class="clearfix"></li>
+</ul>

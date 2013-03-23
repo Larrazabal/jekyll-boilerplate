@@ -1,0 +1,7 @@
+site_name: Site Name Here
+site_description: My first blog
+permalink: posts/:title/index.html	# Remove /index.html if not working in file:// protocol
+pygments: true
+destination: _site	# change if you want another path
+include: [.htaccess]
+title_divider: // # You just simply change this
